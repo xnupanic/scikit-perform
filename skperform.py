@@ -18,7 +18,7 @@ import wget
 import benchmarks
 
 BENCHMARKS = {
-    'locally linear embedding': (benchmarks.locally_linear_embedding, True),
+    'locally linear embedding': (benchmarks.locally_linear_embedding, False),
     'random forest': (benchmarks.random_forest, True),
     'support vector machine': (benchmarks.support_vector_machine, True),
     'xml parsing': (benchmarks.xml_parsing, False),
@@ -28,12 +28,8 @@ BENCHMARKS = {
 }
 
 
-SINGLE_MIN = 0.6387937068939209
-SINGLE_RANGE = 42.79462957382202
-SINGLE_SUM = 2.6925711748991548
-MULTI_MIN = 6.877574443817139
-MULTI_RANGE = 10.364628314971924
-MULTI_SUM = 1.5333908625522925
+SINGLE_CORE_REFERENCE = 17.156576803752355
+MULTI_CORE_REFERENCE = 33.75305533409119
 
 
 def main():
@@ -50,13 +46,13 @@ def main():
             print(str(seconds), 'seconds')
             multi_core_scores.append(seconds)
 
-    single_core_scores = [(x - SINGLE_MIN) / SINGLE_RANGE for x in single_core_scores]
-    single_core_sum = sum(single_core_scores)
-    print('\nsingle core score: {}'.format(SINGLE_SUM / single_core_sum * 1000))
+    single_core_raw_score = sum(single_core_scores) / len(single_core_scores)
+    single_core_score = SINGLE_CORE_REFERENCE / single_core_raw_score * 1000
+    print('\nsingle core score: {}'.format(int(round(single_core_score))))
     if cpu_count() > 1:
-        multi_core_scores = [(x - MULTI_MIN) / MULTI_RANGE for x in multi_core_scores]
-        multi_core_sum = sum(multi_core_scores)
-        print('multi core score: {}'.format(MULTI_SUM / multi_core_sum * 1000))
+        multi_core_raw_score = sum(multi_core_scores) / len(multi_core_scores)
+        multi_core_score = MULTI_CORE_REFERENCE / multi_core_raw_score * 1000
+        print('multi core score: {}'.format(int(round(multi_core_score))))
 
 
 def download_test_data(urls):
