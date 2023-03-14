@@ -36,18 +36,23 @@ operating systems with slight modifications.
 
 make | model | submodel | year | cpu | memory | os | single-core score | multi-core score | notes
 ---- | ----- | -------- | ---- | --- | ------ | -- | ----------------- | ---------------- | -----
-Acer|Aspire|E 15|2018|Intel Core i5-8250U |8GB DDR4 |Linux Mint 20.1 Ulyssa - Cinnamon (64-bit)|999|3025|
-HP|EliteBook|830 G6|2019|Intel Core i5-8365U|16GB DDR4-2400 SDRAM|Windows 10 Enterprise|880|1931|
-Raspberry Pi|4|Model B|2019|Broadcom BCM2711 Quad core Cortex-A72|4GB LPDDR4-3200 SDRAM|Ubuntu Server 20.04.4 arm64|253|698|
-TI|BeagleBone Black|Revision C|2014|AM335x 1GHz ARM Cortex-A8|512MB DDR3 RAM|Debian 10|10||
 Dell|Precision|T7910|2017|2x Intel Xeon E5-2673 v3|64GB ECC DDR4|Ubuntu 20.04.2|897|6344|
+Nvidia|Drive AGX Orin Developer Kit|p3710|2022|Nvidia Orin-X (11x ARM Cortex A78AE)|32GB DDR4|Ubuntu 20.04.5|753|4111|
+Apple|MacBook Pro|15-inch|2013|Intel Core i7-4850HQ|16GB DDR3|Ubuntu 20.04.1|1029|3732|
+Apple|MacBook Pro|15-inch|2018|Intel Core i7-8850H|16GB LPDDR4-2400|macOS Big Sur 11.2.3|935|3504|
 Dell|Precision|T7400|2007|2x Intel Xeon X5472|12GB ECC DDR3|Ubuntu 20.04.1|635|3167|
+Acer|Aspire|E 15|2018|Intel Core i5-8250U |8GB DDR4 |Linux Mint 20.1 Ulyssa - Cinnamon (64-bit)|999|3025|
+Lenovo|ThinkPad|W540|2013|Intel Core i7-4700MQ|12GB DDR3|Ubuntu 20.04.1|939|2883|
+Apple|MacBook Pro|15-inch|2013|Intel Core i7-4850HQ|16GB DDR3|macOS Big Sur 20E5196f|877|2650|
 Nvidia|Jetson|AGX Xavier|2019|8x ARMv8.2 Carmel|16GB LPDDR4x|Ubuntu 18.04.5|573|2415|
 Apple|Mac Pro|Early 2009|2009|2x Intel Xeon Nehalem 2.26GHz|12GB ECC DDR3|macOS Mojave 10.14.6|466|2179|
-Apple|MacBook Pro|15-inch|2018|Intel Core i7-8850H|16GB LPDDR4-2400|macOS Big Sur 11.2.3|935|3504|
-Apple|MacBook Pro|15-inch|2013|Intel Core i7-4850HQ|16GB DDR3|Ubuntu 20.04.1|1029|3732|
-Apple|MacBook Pro|15-inch|2013|Intel Core i7-4850HQ|16GB DDR3|macOS Big Sur 20E5196f|877|2650|
-Lenovo|ThinkPad|W540|2013|Intel Core i7-4700MQ|12GB DDR3|Ubuntu 20.04.1|939|2883|
+HP|EliteBook|830 G6|2019|Intel Core i5-8365U|16GB DDR4-2400 SDRAM|Windows 10 Enterprise|880|1931|
+Essential|Phone|PH-1|2017|Qualcomm Snapdragon 835|4GB LPDDR4|Linux 4.4.210-perf+|420|1495|
 Pine64|Pinebook Pro||2019|Rockchip RK3399 (2x ARM Cortex-A72 + 4x ARM Cortex-A53)|4GB LPDDR4|Ubuntu 20.04.1 (64-bit kernel/userspace)|178|883|
+Raspberry Pi|4|Model B|2019|Broadcom BCM2711 Quad core Cortex-A72|4GB LPDDR4-3200 SDRAM|Ubuntu Server 20.04.4 arm64|253|698|
+TI|BeagleBone Black|Revision C|2014|AM335x 1GHz ARM Cortex-A8|512MB DDR3 RAM|Debian 10|10||
+
+
+
 
 
