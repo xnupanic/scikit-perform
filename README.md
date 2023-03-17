@@ -37,6 +37,7 @@ operating systems with slight modifications.
 make | model | submodel | year | cpu | memory | os | single-core score | multi-core score | notes
 ---- | ----- | -------- | ---- | --- | ------ | -- | ----------------- | ---------------- | -----
 Dell|Precision|T7910|2017|2x Intel Xeon E5-2673 v3|64GB ECC DDR4|Ubuntu 20.04.2|897|6344|
+Microsoft|Azure VM|D8pds|2022|8x ARMv8.2 Ampere Altra|32GB DDR4|Ubuntu 20.04.5|956|4699|
 Nvidia|Drive AGX Orin Developer Kit|p3710|2022|Nvidia Orin-X (11x ARM Cortex A78AE)|32GB DDR4|Ubuntu 20.04.5|753|4111|
 Apple|MacBook Pro|15-inch|2013|Intel Core i7-4850HQ|16GB DDR3|Ubuntu 20.04.1|1029|3732|
 Apple|MacBook Pro|15-inch|2018|Intel Core i7-8850H|16GB LPDDR4-2400|macOS Big Sur 11.2.3|935|3504|
